@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="DeepEyes.">
+  <meta name="keywords" content="DeepEyes">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DeepEyes</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/logo.jpg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <p style="font-size:18px; display: inline; margin-right: -2px; margin-top: 12px;">🔥</p>
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://visual-agent.github.io/">
+              <b>DeepEyesV2</b>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title is-bold">
+              <img src="static/images/logo.jpg" style="width:1.6em;vertical-align: middle" alt="Logo" />
+              <span class="worldsense" style="vertical-align: middle">DeepEyes</span>
+            </h1>
+            <h2 class="subtitle is-2 publication-subtitle" , style="margin-bottom: 20px;">
+              Incentivizing “Thinking with Images” via Reinforcement Learning
+            </h2>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                Ziwei Zheng<sup>1,2,*</sup>,</span>
+              <span class="author-block">
+                Michael Yang<sup>1,*</sup>,</span>
+              <span class="author-block">
+                Jack Hong<sup>1,*</sup>,
+              </span>
+              <span class="author-block">
+                Chenxiao Zhao</a><sup>1,*,†</sup>,
+              </span>
+              <br>
+              <span class="author-block">
+                Guohai Xu<sup>1,‡</sup>,
+              </span>
+              <span class="author-block">
+                Le Yang<sup>2,‡</sup>,
+              </span>
+              <span class="author-block">
+                Chao Shen<sup>2</sup>,
+              </span>
+              <span class="author-block">
+                XingYu<sup>1</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>*</sup>Equal contribution. Random Order.</span>
+              <span class="author-block"><sup>†</sup>Main Code Contributor</span>
+              <span class="author-block"><sup>‡</sup>Corresponding Author</span>
+            </div>
+
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Xiaohongshu Inc.</span>
+              <span class="author-block"><sup>2</sup>Xi'an Jiaotong University</span>
+            </div>
+
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2505.14362" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2505.14362" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/Visual-Agent/DeepEyes"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Model Link. -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/ChenShawn/DeepEyes-7B"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <p style="font-size:18px">🔍</p>
+                    </span>
+                    <span>Model</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/ChenShawn/DeepEyes-Datasets-47k"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <p style="font-size:18px">🤗</p>
+                    </span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-steve">
+            <img src="./static/videos/case4.gif" alt="">
+          </div>
+          <div class="item item-chair-tp">
+            <img src="./static/videos/case5.gif" alt="">
+          </div>
+          <div class="item item-shiba">
+            <img src="./static/videos/case3.gif" alt="">
+          </div>
+          <div class="item item-coffee">
+            <img src="./static/videos/case1.gif" alt="">
+          </div>
+          <div class="item item-toby">
+            <img src="./static/videos/case2.gif" alt="">
+          </div>
+        </div>
+        <!-- <p style="text-align: center; font-size: 24px;">Demo of DeepEyes</p> -->
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Large Vision-Language Models (VLMs) have shown strong capabilities in multimodal understanding and
+              reasoning,
+              yet they are primarily constrained by text-based reasoning processes. However, achieving seamless
+              integration
+              of visual and textual reasoning which mirrors human cognitive processes remains a significant challenge.
+              In particular, effectively incorporating advanced visual input processing into reasoning mechanisms is
+              still an open question.
+            </p>
+            <p>
+              Thus, in this paper, we explore the interleaved multimodal reasoning paradigm and introduce DeepEyes,
+              a model with "thinking with images" capabilities incentivized through end-to-end reinforcement learning
+              without the need for cold-start SFT. Notably, this ability emerges natively within the model itself,
+              leveraging its inherent grounding ability as a tool instead of depending on separate specialized models.
+              Specifically, we propose a tool-use-oriented data selection mechanism and a reward strategy to encourage
+              successful
+              tool-assisted reasoning trajectories.
+            </p>
+            <p>
+              DeepEyes achieves significant performance gains on fine-grained perception
+              and reasoning benchmarks and also demonstrates improvement in grounding, hallucination, and mathematical
+              reasoning tasks.
+              Interestingly, we observe the distinct evolution of tool-calling behavior from initial exploration to
+              efficient and
+              accurate exploitation, and diverse thinking patterns that closely mirror human visual reasoning processes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+
+  <section class="hero is-light is-small">
+    <div class="hero-body has-text-centered">
+      <h1 class="title is-1 mathvista_other" id="citation">DeepEyes</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths" style="width: 100%;">
+          <h2 class="title is-3">Method</h2>
+          <div class="content has-text-justified">
+            <div class="content has-text-centered">
+
+              <img src="static/images/method.png" style="width: 70%;" />
+              <p style="margin-bottom: 0px; font-size:20px; font-weight: bold;">Overview of DeepEyes.
+              </p>
+              <p>Our model itself decides whether to perform a second perception via zoom-in
+                by generating <br> grounding coordinates and cropping relevant regions, or to answer directly. </p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero is-light is-small">
+    <div class="hero-body has-text-centered">
+      <h1 class="title is-1 mathvista_other" id="citation">Results</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- <div class="columns is-centered m-6"> -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths" style="width: 80%;">
+          <h2 class="title is-3">Visual Search Benchmarks</h2>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/experiments/accuracy_comparison.png" alt="overall_performance" width="100%" />
+              <p>DeepEyes achieves better performance on visual search benchmarks, such as V* and HR-Bench.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths" style="width: 80%;">
+          <h2 class="title is-3">Grounding and Hallucination Benchmarks</h2>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/experiments/grounding.png" alt="overall_performance" width="100%" />
+              <p>Our visual reasoning can further reduce the hallucinations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths" style="width: 80%;">
+          <h2 class="title is-3">Multimodal Reasoning Benchmarks</h2>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/experiments/reason.png" alt="overall_performance" width="100%" />
+              <p>DeepEyes exhibits strong reasoning ability.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-light is-small">
+    <div class="hero-body has-text-centered">
+      <h1 class="title is-1 mathvista_other" id="citation">Key Findings</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- <div class="columns is-centered m-6"> -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths" style="width: 80%;">
+          <h2 class="title is-3">Training Dynamics</h2>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/experiments/dynamic.png" alt="overall_performance" width="100%" />
+              <p>Tool-calling dynamics evolve through three distinct stages during RL training: <br> s1:
+                <b> initial exploration with limited effectiveness </b> <br>s2:
+                <b> aggressive yet successful usage</b>, <br> s3:
+                <b>selective and efficient exploitation with high performance.</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths" style="width: 80%;">
+          <h2 class="title is-3">Thinking Patterns</h2>
+          <div class="box m-5">
+            <div class="carousel results-carousel">
+              <div class="item" style="font-size: 14px; padding-bottom: 15px;">
+                <img src="./static/images/experiments/pattern_visual_search.png" alt="">
+                <p>Visual Search</p>
+              </div>
+              <div class="item" style="font-size: 14px; padding-bottom: 15px;">
+                <img src="./static/images/experiments/pattern_visual_comparison.png" alt="">
+                <p>Visual Comparison</p>
+              </div>
+              <div class="item" style="font-size: 14px; padding-bottom: 15px;">
+                <img src="./static/images/experiments/pattern_visual_confirmation.png" alt="">
+                <p>Visual Confirmation</p>
+              </div>
+              <div class="item" style="font-size: 14px; padding-bottom: 15px;">
+                <img src="./static/images/experiments/pattern_hallucination.png" alt="">
+                <p>Hallucination Mitigation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+  <section class="hero is-light is-small">
+    <div class="hero-body has-text-centered">
+      <h1 class="title is-1 mathvista_other" id="citation">Citation</h1>
+    </div>
+  </section>
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <pre><code>
+        @article{zheng2025deepeyes,
+          title={DeepEyes: Incentivizing" Thinking with Images" via Reinforcement Learning},
+          author={Zheng, Ziwei and Yang, Michael and Hong, Jack and Zhao, Chenxiao and Xu, Guohai and Yang, Le and Shen, Chao and Yu, Xing},
+          journal={arXiv preprint arXiv:2505.14362},
+          year={2025}
+        }
+      </code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p style="text-align: center;">
+            This website is adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a
+              href="https://mathvista.github.io/">MathVista</a>.
+            <br>Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="DeepEyes.">
-  <meta name="keywords" content="DeepEyes">
+  <meta name="description" content="DeepEyesV2">
+  <meta name="keywords" content="DeepEyesV2">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DeepEyes</title>
+  <title>DeepEyesV2</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -57,7 +57,7 @@
             More Research
           </a>
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="https://visual-agent.github.io/">
+            <a class="navbar-item" href="./v1/index.html">
               <b>DeepEyes</b>
             </a>
           </div>
@@ -74,48 +74,40 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title is-bold">
               <img src="static/images/logo.jpg" style="width:1.6em;vertical-align: middle" alt="Logo" />
-              <span class="worldsense" style="vertical-align: middle">DeepEyes</span>
+              <span class="worldsense" style="vertical-align: middle">DeepEyesV2</span>
             </h1>
             <h2 class="subtitle is-2 publication-subtitle" , style="margin-bottom: 20px;">
-              Incentivizing “Thinking with Images” via Reinforcement Learning
+              Toward Agentic Multimodal Models
             </h2>
 
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                Ziwei Zheng<sup>1,2,*</sup>,</span>
+                Jack Hong<sup>*</sup>,</span>
               <span class="author-block">
-                Michael Yang<sup>1,*</sup>,</span>
+                Chenxiao Zhao<sup>*</sup>,</span>
               <span class="author-block">
-                Jack Hong<sup>1,*</sup>,
+                Chenglin Zhu<sup>*</sup>,
               </span>
               <span class="author-block">
-                Chenxiao Zhao</a><sup>1,*,†</sup>,
-              </span>
-              <br>
-              <span class="author-block">
-                Guohai Xu<sup>1,‡</sup>,
+                Weiheng Lu,
               </span>
               <span class="author-block">
-                Le Yang<sup>2,‡</sup>,
+                Guohai Xu<sup>†</sup>,
               </span>
               <span class="author-block">
-                Chao Shen<sup>2</sup>,
-              </span>
-              <span class="author-block">
-                XingYu<sup>1</sup>
+                XingYu,
               </span>
             </div>
 
+            <br>
+
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>*</sup>Equal contribution. Random Order.</span>
-              <span class="author-block"><sup>†</sup>Main Code Contributor</span>
-              <span class="author-block"><sup>‡</sup>Corresponding Author</span>
+              <span class="author-block"><sup>*</sup>Equal contribution</span>
+              <span class="author-block"><sup>†</sup>Corresponding Author</span>
             </div>
 
-
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>Xiaohongshu Inc.</span>
-              <span class="author-block"><sup>2</sup>Xi'an Jiaotong University</span>
+              <span class="author-block">Xiaohongshu Inc.</span>
             </div>
 
 
@@ -139,7 +131,7 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://github.com/Visual-Agent/DeepEyes"
+                  <a href="https://github.com/Visual-Agent/DeepEyesV2"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -149,7 +141,7 @@
                 </span>
                 <!-- Model Link. -->
                 <span class="link-block">
-                  <a href="https://huggingface.co/ChenShawn/DeepEyes-7B"
+                  <a href="https://huggingface.co/honglyhly/DeepEyesV2_7B_1031"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <p style="font-size:18px">🔍</p>
@@ -159,12 +151,21 @@
                 </span>
                 <!-- Dataset Link. -->
                 <span class="link-block">
-                  <a href="https://huggingface.co/datasets/ChenShawn/DeepEyes-Datasets-47k"
+                  <a href="https://huggingface.co/datasets/honglyhly/DeepEyesV2_SFT"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <p style="font-size:18px">🤗</p>
                     </span>
-                    <span>Dataset</span>
+                    <span>SFT Data</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/honglyhly/DeepEyesV2_RL"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <p style="font-size:18px">🤗</p>
+                    </span>
+                    <span>RL Data</span>
                   </a>
                 </span>
               </div>
@@ -184,19 +185,22 @@
       <div class="container">
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item item-steve">
-            <img src="./static/videos/case4.gif" alt="">
+            <img src="./static/videos/case1.gif" alt="">
           </div>
           <div class="item item-chair-tp">
-            <img src="./static/videos/case5.gif" alt="">
+            <img src="./static/videos/case2.gif" alt="">
           </div>
           <div class="item item-shiba">
             <img src="./static/videos/case3.gif" alt="">
           </div>
           <div class="item item-coffee">
-            <img src="./static/videos/case1.gif" alt="">
+            <img src="./static/videos/case4.gif" alt="">
           </div>
           <div class="item item-toby">
-            <img src="./static/videos/case2.gif" alt="">
+            <img src="./static/videos/case5.gif" alt="">
+          </div>
+          <div class="item item-toby">
+            <img src="./static/videos/case6.gif" alt="">
           </div>
         </div>
         <!-- <p style="text-align: center; font-size: 24px;">Demo of DeepEyes</p> -->
@@ -213,30 +217,23 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Large Vision-Language Models (VLMs) have shown strong capabilities in multimodal understanding and
-              reasoning,
-              yet they are primarily constrained by text-based reasoning processes. However, achieving seamless
-              integration
-              of visual and textual reasoning which mirrors human cognitive processes remains a significant challenge.
-              In particular, effectively incorporating advanced visual input processing into reasoning mechanisms is
-              still an open question.
+              Agentic multimodal models should not only comprehend text and images, but also actively invoke external tools, 
+              such as code execution environments and web search, and integrate these operations into reasoning. 
+              In this work, we introduce DeepEyesV2 and explore how to build an agentic multimodal model from the 
+              perspectives of data construction, training methods, and model evaluation. 
             </p>
             <p>
-              Thus, in this paper, we explore the interleaved multimodal reasoning paradigm and introduce DeepEyes,
-              a model with "thinking with images" capabilities incentivized through end-to-end reinforcement learning
-              without the need for cold-start SFT. Notably, this ability emerges natively within the model itself,
-              leveraging its inherent grounding ability as a tool instead of depending on separate specialized models.
-              Specifically, we propose a tool-use-oriented data selection mechanism and a reward strategy to encourage
-              successful
-              tool-assisted reasoning trajectories.
-            </p>
-            <p>
-              DeepEyes achieves significant performance gains on fine-grained perception
-              and reasoning benchmarks and also demonstrates improvement in grounding, hallucination, and mathematical
-              reasoning tasks.
-              Interestingly, we observe the distinct evolution of tool-calling behavior from initial exploration to
-              efficient and
-              accurate exploitation, and diverse thinking patterns that closely mirror human visual reasoning processes.
+              We observe that direct reinforcement learning alone fails to induce robust tool-use behavior. 
+              This phenomenon motivates a two-stage training pipeline: a cold-start stage to establish tool-use patterns, 
+              and reinforcement learning stage to further refine tool invocation. 
+              We curate a diverse, moderately challenging training dataset, specifically including examples where tool use is beneficial. 
+              We validate DeepEyesV2 across real-world understanding, mathematical reasoning, and search-intensive benchmarks, 
+              demonstrating that systematic tool integration enables reliable and extensible multimodal reasoning behaviour. 
+              Moreover, DeepEyesV2 exhibits task-adaptive tool invocation, 
+              tending to use image operations for perception tasks and numerical computations for reasoning tasks. 
+              Reinforcement learning further enable complex tool combinations and allowing model to selectively invoke tools based on problem context. 
+              We hope our study can provide guidance for community in developing agentic multimodal models.
+
             </p>
           </div>
         </div>
@@ -247,30 +244,145 @@
 
   <section class="hero is-light is-small">
     <div class="hero-body has-text-centered">
-      <h1 class="title is-1 mathvista_other" id="citation">DeepEyes</h1>
+      <h1 class="title is-1 mathvista_other" id="citation">DeepEyesV2</h1>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
+
+      <!-- pipeline -->
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths" style="width: 100%;">
-          <h2 class="title is-3">Method</h2>
-          <div class="content has-text-justified">
+        <div class="column is-four-fifths" style="width: 75%;">
+          <h2 class="title is-3">Overall Pipeline</h2>
+          <div class="box m-5">
             <div class="content has-text-centered">
-
-              <img src="static/images/method.png" style="width: 70%;" />
-              <p style="margin-bottom: 0px; font-size:20px; font-weight: bold;">Overview of DeepEyes.
-              </p>
-              <p>Our model itself decides whether to perform a second perception via zoom-in
-                by generating <br> grounding coordinates and cropping relevant regions, or to answer directly. </p>
-
+              <img src="static/images/method.png" alt="pipeline" width="100%" />
+              <p style="margin-bottom: 0px; font-size:20px; font-weight: bold;">Pipeline of DeepEyesV2</p>
+              <p>DeepEyesV2 invokes tools and incorporates execution results into subsequent reasoning steps, <br>enabling iterative and tool-augmented multimodal inference. </p>
             </div>
           </div>
         </div>
-
       </div>
-    </div>
+
+      <div class="columns is-centered has-text-left" style="margin-top: -30px;">
+        <div class="column is-four-fifths" style="width: 65%;">
+          <p>Similar to DeepEyes, DeepEyesV2 is an agentic multimodal model, but with
+            extended tool-use capabilities beyond simple cropping. 
+            In DeepEyesV2, programmatic code execution and web retrieval are treated as complementary and interleavable tools inside a single reasoning trajectory. 
+            Given an image input and the corresponding user query, DeepEyesV2 first
+            generates an initial reasoning plan, and explicitly determines whether this question can be solved
+            directly through internal reasoning or requires tool invocation. If tool use is necessary, DeepEyesV2
+            emits executable Python code or issues web search queries. All tool outputs are converted
+            into observations and appended to model's context. DeepEyesV2 then thinks further in light of these
+            observations and may plan further tool invocations (either additional code, further searches, or both),
+            iterating this reasoning-tooling-integration loop until a conclusive answer is produced.
+          </p>
+          <div class="my-2"></div>
+          <p>
+            DeepEyesV2 can dynamically choose, combine, and use tools as reasoning unfolds. This integration
+            yields three main advantages: (i) it allows <strong>expanded and enhanced analytical capability</strong> through
+            executable code; (ii) it enables <strong>active and real-time knowledge seeking</strong> by retrieving multimodal
+            evidence from the web; and (iii) it supports <strong>iterative, interleaved multi-tool reasoning</strong>, in which
+            code execution and search can be dynamically combined within a single trajectory, rather than being
+            isolated modules. Together, these features position DeepEyesV2 as a more general, reliable, and
+            extensible framework for multimodal reasoning.
+          </p>
+
+        </div>
+      </div>
+
+
+
+      <!-- pioneer experiment -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths" style="width: 75%;">
+          <h2 class="title is-3">Pioneer Experiments</h2>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/pioneer.png" alt="pioneer" width="100%" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-left" style="margin-top: -30px;">
+        <div class="column is-four-fifths" style="width: 65%;">
+          <p>To investigate whether MLLMs can directly acquire tool-use ability through reinforcement learning,
+          we first conduct a pioneer experiment on Qwen2.5-VL following DeepEyes. 
+
+          During training, we observe two kind of trends:
+          <div class="my-2"></div>
+          <strong>(1) Naive RL.</strong> In the early stage, model occasionally attempts to produce Python code, 
+          but these outputs are often buggy or fail to execute, casionally attempts to produce Python code,
+          indicating that existing MLLMs struggle to generate stable and reliable code. As training contin-
+          ues, model gradually abandons code generation and converges to producing only short reasoning
+          chains followed by direct answers, thereby bypassing tool use. 
+          <div class="my-2"></div>
+          
+          <strong>(2) Incorporating tool usage bonus.</strong>
+          Then, to encourage tool invocation, we incorporate the tool usage bonus mechanism from DeepEyes, 
+          which explicitly rewards the generation of code. 
+          With this additional signal, model is indeed able to produce correct and runnable
+          code in the early stages, suggesting that the mechanism can enforce coding ability. However, with
+          continued training a new degeneration emerges: model's behavior converged to emitting exactly
+          one code block per query, and this single block typically consists of non-executable, placeholder
+          comments rather than meaningful code, revealing the phenomenon of reward hacking. 
+          
+          <div class="my-2"></div>
+
+          This pioneer experiment highlights that existing MLLMs cannot reliably learn complex tool use through direct
+          RL alone, motivating <strong>the need for a cold start</strong> to bootstrap model's tool invocation ability. 
+        </p>
+
+        </div>
+      </div>
+
+
+
+      <div class="columns is-centered has-text-left">
+        <div class="column is-four-fifths" style="width: 65%;">
+          <h2 class="title is-3 has-text-centered">Data Curation</h2>
+
+          <p>Following DeepEyes, we collect data in accordance with the following principles: 
+          <div class="my-2"></div>
+          (i) <strong>Diverse tasks and image distribution.</strong> We incorporate
+          varied data to cover a wide range of multimodal challenges and visual components. 
+          <div class="my-2"></div>
+          (ii) <strong>Verifiabilityand structured format.</strong> All questions are reformulated into a structured, open-ended QA format
+          to facilitate objective evaluation. We exclude examples that cannot be reliably verified, such as
+          those with incorrect answers, ambiguous phrasing, or poor readability. 
+          <div class="my-2"></div>
+          (iii) <strong>Appreciate difficulty.</strong> We exclude examples that the base model can easily solve and prioritize questions that remain
+          challenging. 
+          <div class="my-2"></div>
+          (iv) <strong>Beneficial integration of tools.</strong> We categorize examples based on whether tool
+          usage leads to correct answers. Cases where model can solve correctly using additional tool calls
+          are reserved for reinforcement learning, whereas examples that remain unsolved even with tool
+          assistance are used for cold start.
+          </p>
+          
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths" style="width: 75%;">
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/training_data.png" alt="pioneer" width="100%" />
+              <p style="margin-bottom: 0px; font-size:20px; font-weight: bold;">Distribution of cold start and reinforcement learning data.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      
+
+
+    </div> 
   </section>
 
 
@@ -286,11 +398,10 @@
       <!-- <div class="columns is-centered m-6"> -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths" style="width: 80%;">
-          <h2 class="title is-3">Visual Search Benchmarks</h2>
+          <h2 class="title is-3">Real-World & OCR & Chart Understanding</h2>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/experiments/accuracy_comparison.png" alt="overall_performance" width="100%" />
-              <p>DeepEyes achieves better performance on visual search benchmarks, such as V* and HR-Bench.</p>
+              <img src="static/images/experiments/real_world.png" alt="overall_performance" width="100%" />
             </div>
           </div>
         </div>
@@ -298,32 +409,32 @@
 
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths" style="width: 80%;">
-          <h2 class="title is-3">Grounding and Hallucination Benchmarks</h2>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/experiments/grounding.png" alt="overall_performance" width="100%" />
-              <p>Our visual reasoning can further reduce the hallucinations.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths" style="width: 80%;">
-          <h2 class="title is-3">Multimodal Reasoning Benchmarks</h2>
+          <h2 class="title is-3">Multimodal Reasoning</h2>
           <div class="box m-5">
             <div class="content has-text-centered">
               <img src="static/images/experiments/reason.png" alt="overall_performance" width="100%" />
-              <p>DeepEyes exhibits strong reasoning ability.</p>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths" style="width: 80%;">
+          <h2 class="title is-3">Multimodal Search</h2>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/experiments/search.png" alt="overall_performance" width="100%" />
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <section class="hero is-light is-small">
     <div class="hero-body has-text-centered">
-      <h1 class="title is-1 mathvista_other" id="citation">Key Findings</h1>
+      <h1 class="title is-1 mathvista_other" id="citation">Towards Agentic MLLMs</h1>
     </div>
   </section>
 
@@ -333,45 +444,81 @@
       <!-- <div class="columns is-centered m-6"> -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths" style="width: 80%;">
-          <h2 class="title is-3">Training Dynamics</h2>
+          <h2 class="title is-3">Training Data Ablation</h2>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/experiments/dynamic.png" alt="overall_performance" width="100%" />
-              <p>Tool-calling dynamics evolve through three distinct stages during RL training: <br> s1:
-                <b> initial exploration with limited effectiveness </b> <br>s2:
-                <b> aggressive yet successful usage</b>, <br> s3:
-                <b>selective and efficient exploitation with high performance.</b>
-              </p>
+              <img src="static/images/experiments/sft_ablation.png" alt="overall_performance" width="100%" />
+              <p style="margin: 0px 0px 20px 0px; font-size:20px; font-weight: bold;">Ablation study on cold start data</p>
+
+              <img src="static/images/experiments/rl_ablation.png" alt="overall_performance" width="100%" />
+              <p style="margin: -5px 0px 0px 0px; font-size:20px; font-weight: bold;">Ablation study on reinforcement learning data</p>
+
             </div>
           </div>
         </div>
       </div>
 
+      <div class="columns is-centered has-text-left" style="margin-top: -30px;">
+        <div class="column is-four-fifths" style="width: 70%;">
+          <p>Diverse training data is important for improving model generalization. Besides, the introduction of long CoT cold start data can strengthens reasoning and substantially improves tool use on complex tasks.</p>
+        </div>
+      </div>
+
+
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths" style="width: 80%;">
-          <h2 class="title is-3">Thinking Patterns</h2>
+          <h2 class="title is-3">Tool Distribution</h2>
           <div class="box m-5">
-            <div class="carousel results-carousel">
-              <div class="item" style="font-size: 14px; padding-bottom: 15px;">
-                <img src="./static/images/experiments/pattern_visual_search.png" alt="">
-                <p>Visual Search</p>
-              </div>
-              <div class="item" style="font-size: 14px; padding-bottom: 15px;">
-                <img src="./static/images/experiments/pattern_visual_comparison.png" alt="">
-                <p>Visual Comparison</p>
-              </div>
-              <div class="item" style="font-size: 14px; padding-bottom: 15px;">
-                <img src="./static/images/experiments/pattern_visual_confirmation.png" alt="">
-                <p>Visual Confirmation</p>
-              </div>
-              <div class="item" style="font-size: 14px; padding-bottom: 15px;">
-                <img src="./static/images/experiments/pattern_hallucination.png" alt="">
-                <p>Hallucination Mitigation</p>
-              </div>
+            <div class="content has-text-centered">
+              <img src="static/images/experiments/tool_distribution.png" alt="overall_performance" width="100%" />
+              <p style="margin-bottom: 0px; font-size:20px; font-weight: bold;">Tool distribution comparison</p>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="columns is-centered has-text-left" style="margin-top: -30px;">
+        <div class="column is-four-fifths" style="width: 70%;">
+          <p>Model exhibits different distributions of tool call across various tasks. 
+            Additionally, after reinforcement learning, model tends to perform more numerical analysis.</p>
+        </div>
+      </div>
+
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths" style="width: 80%;">
+          <h2 class="title is-3">Tool Invocation Statics</h2>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/experiments/tool_invocation.png" alt="overall_performance" width="100%" />
+              <p style="margin-bottom: 0px; font-size:20px; font-weight: bold;">Tool invocation statics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-left" style="margin-top: -30px;">
+        <div class="column is-four-fifths" style="width: 70%;">
+          <p>Reinforcement learning can effectively improve the efficiency of tool invocation. After reinforcement learning, model's tool invocation rate significantly decreases, indicating that model learns adaptive reasoning. When tool calls are not necessary, model directly solves problems instead of invoking ineffective tools.</p>
+        </div>
+      </div>
+
+
+
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths" style="width: 80%;">
+          <h2 class="title is-3">Training Dynamic</h2>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/experiments/training_dynamic.png" alt="overall_performance" width="100%" />
+              <p style="margin-bottom: 0px; font-size:20px; font-weight: bold;">Training dynamics of RL</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
 
 
     </div>
@@ -389,14 +536,11 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <pre><code>
-        @article{zheng2025deepeyesincentivizingthinkingimages,
-          title={DeepEyes: Incentivizing "Thinking with Images" via Reinforcement Learning}, 
-          author={Ziwei Zheng, Michael Yang, Jack Hong, Chenxiao Zhao, Guohai Xu, Le Yang, Chao Shen, Xing Yu},
-          year={2025},
-          eprint={2505.14362},
-          archivePrefix={arXiv},
-          primaryClass={cs.CV},
-          url={https://arxiv.org/abs/2505.14362}, 
+        @article{zheng2025deepeyes,
+          title={DeepEyes: Incentivizing" Thinking with Images" via Reinforcement Learning},
+          author={Zheng, Ziwei and Yang, Michael and Hong, Jack and Zhao, Chenxiao and Xu, Guohai and Yang, Le and Shen, Chao and Yu, Xing},
+          journal={arXiv preprint arXiv:2505.14362},
+          year={2025}
         }
       </code></pre>
     </div>
